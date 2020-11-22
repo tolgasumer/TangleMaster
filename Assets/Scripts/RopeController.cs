@@ -39,7 +39,7 @@ namespace Rope
             Vector3 position = transform.position;
 
             // Fragmentleri rope objesinin childi olarak yarat, araya 'interval' kadar bosluk koy
-            for (var i = 0; i < fragmentCount; i++)
+            for (int i = 0; i < fragmentCount; i++)
             {
                 fragments[i] = Instantiate(fragmentPrefab, position, Quaternion.identity);
                 fragments[i].transform.SetParent(transform);
