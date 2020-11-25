@@ -19,7 +19,7 @@ public class RopeFragmentController : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        
+        // Freeze the rope if it connects with the same colored connectionPoint
         if(collision.transform.gameObject.name == "ConnectionPoint" && collision.transform.gameObject.GetComponent<Renderer>().material.color == parentRopeColor)
         {
             GetComponent<Rigidbody>().isKinematic = true;

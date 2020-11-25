@@ -8,9 +8,6 @@ public class GameManager : MonoBehaviour
     GameObject blockPrefab;
 
     [SerializeField]
-    int blockCount = 3;
-
-    [SerializeField]
     Transform spawnPoint;
 
     [SerializeField]
@@ -21,6 +18,8 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        int blockCount = Random.Range(3, 5); // Random block amount between 3-5
+
         // Spawn blocks with desired offset between eachother
         blocks = new GameObject[blockCount];
         ropeColors = new Color[blockCount];
@@ -47,10 +46,10 @@ public class GameManager : MonoBehaviour
             ropeColors[r] = tmp;
         }
 
+        // Assign random colors to connection points
         for (int i = 0; i < blockCount; i++)
         {
             blocks[i].transform.Find("ConnectionPoint").GetComponent<Renderer>().material.SetColor("_Color", ropeColors[i]);
-
         }
 
     }

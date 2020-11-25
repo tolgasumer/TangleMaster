@@ -145,7 +145,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 585281095}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.23, y: 3.75, z: 4.13}
+  m_LocalPosition: {x: -1.63, y: 3.75, z: 4.13}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -508,7 +508,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blockPrefab: {fileID: 8524955583520646494, guid: 778257094ec15654788b868f6d6644a9,
     type: 3}
-  blockCount: 3
   spawnPoint: {fileID: 585281096}
   spawnPosOffset: {x: 1.4, y: 0, z: 0}
 --- !u!1 &1348566985
